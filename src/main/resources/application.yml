@@ -1,0 +1,19 @@
+spring:
+  liquibase:
+    enabled: true
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/tushkanchik
+    username: postgres
+    password: password
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+
+jwt:
+  secret:
+    access: z5t8wUCdkisTSf+SQOL7wJYmpkS2ul3KW5ASoJmEBH6H20MNdaWktJ+ZIg1J3Z1ahD+AgAZKxTfQy9GXuDiX2A==
+    refresh: CWBTbDdVFIl1EFGdryKHczLu+VT+pmiXFvlsiWH7hsai1J2zuLrNZakalo304YUNDRT2jiIyhuYY91LWWa2UcA==

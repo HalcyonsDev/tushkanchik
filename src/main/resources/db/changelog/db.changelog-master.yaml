@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/changeset/create-user-table.yml
+  - include:
+      file: db/changelog/changeset/create-token-table.yml
+  - include:
+      file: db/changelog/changeset/create-course-table.yml
+  - include:
+      file: db/changelog/changeset/create-page-table.yml
+  - include:
+      file: db/changelog/changeset/create-text-table.yml

@@ -1,0 +1,28 @@
+version: "1.0"
+
+services:
+  tushkanchik-app:
+    container_name: tushkanchik
+    image: tushkanchik
+    ports:
+      - "8080:8080"
+    networks:
+      - tushkanchik-network
+
+  tushkanchik-db:
+    container_name: tushkanchik-db
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: tushkanchik
+    ports:
+      - "5432:5432"
+    networks:
+      - tushkanchik-network
+
+volumes:
+  tushkanchik-db:
+
+networks:
+  tushkanchik-network:
+    driver: bridge
