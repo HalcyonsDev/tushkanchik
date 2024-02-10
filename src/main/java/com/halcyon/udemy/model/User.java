@@ -25,10 +25,6 @@ public class User {
     private String password;
     private BigDecimal balance;
 
-    @OneToMany(mappedBy = "user")
-    @JsonManagedReference
-    private List<Transaction> transactions;
-
     @ManyToMany(mappedBy = "users")
     @JsonBackReference
     private List<Course> courses;

@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(name = "content_order")
+@Table(name = "content_orders")
 @Getter
 @Setter
 @NoArgsConstructor

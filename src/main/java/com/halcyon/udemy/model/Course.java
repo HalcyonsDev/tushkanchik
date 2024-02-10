@@ -47,8 +47,4 @@ public class Course {
     @OneToMany(mappedBy = "course")
     @JsonBackReference
     private List<Page> pages;
-
-    @OneToMany(mappedBy = "course")
-    @JsonBackReference
-    private List<Test> tests;
 }

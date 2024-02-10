@@ -2,7 +2,6 @@ package com.halcyon.udemy.controller;
 
 import com.halcyon.udemy.dto.NewCourseDto;
 import com.halcyon.udemy.model.Course;
-import com.halcyon.udemy.model.Transaction;
 import com.halcyon.udemy.service.CourseService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -24,11 +23,5 @@ public class CourseController {
     public ResponseEntity<Course> getById(@PathVariable Long courseId) {
         Course course = courseService.getCourse(courseId);
         return ResponseEntity.ok(course);
-    }
-
-    @PostMapping("/{courseId}/buy")
-    public ResponseEntity<Transaction> buy(@PathVariable Long courseId) {
-        Transaction transaction = courseService.buyById(courseId);
-        return ResponseEntity.ok(transaction);
     }
 }

@@ -1,11 +1,17 @@
 databaseChangeLog:
   - include:
-      file: db/changelog/changeset/create-user-table.yml
+      file: db/changelog/changeset/create-user-table.sql
   - include:
-      file: db/changelog/changeset/create-token-table.yml
+      file: db/changelog/changeset/create-token-table.sql
   - include:
-      file: db/changelog/changeset/create-course-table.yml
+      file: db/changelog/changeset/create-course-table.sql
   - include:
-      file: db/changelog/changeset/create-page-table.yml
+      file: db/changelog/changeset/create-page-table.sql
   - include:
-      file: db/changelog/changeset/create-text-table.yml
+      file: db/changelog/changeset/create-text-table.sql
+  - include:
+      file: db/changelog/changeset/create-image-table.sql
+  - include:
+      file: db/changelog/changeset/create-content-order-table.sql
+  - include:
+      file: db/changelog/changeset/create-courses-users-table.sql
